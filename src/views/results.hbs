@@ -1,0 +1,42 @@
+<div class='absolute top-4 lg:left-40 flex flex-row text-white text-3xl underline'>
+    <a href='/home' class='m-4'>Home</a>
+    <a href='/search' class='m-4'>Search</a>
+</div>  
+<div class='absolute top-4 lg:right-40 flex flex-row text-white text-3xl underline'>
+    <a href='/account' class='m-4'>Account</a>
+    <a href='/contact' class='m-4'>Contact</a>
+</div>  
+
+<h1 class='text-white text-4xl lg:text-6xl text-center pt-4 pb-4 mb-10 lg:mb-20'>Taste Maker</h1>
+
+<div id='mealContainer'>
+
+</div>
+
+<script>
+    let recipes;
+    let storage = (window.localStorage.getItem('ingredients'));
+    storage = storage.split("\"");
+    for (let j = 0; j < storage.length; j++) {
+      storage.splice(j, 1);
+    }
+    {{!-- axios(`https://www.themealdb.com/api/json/v2/9973533/filter.php?i=${storage.join(",")}`)
+        .then( (response) => {
+            recipes = response.data.meals;
+            for (let i = 0; i < recipes.length; i++) {
+                let tempDiv = document.createElement('div');
+                tempDiv.classList.add('bg-white', 'rounded-xl');
+                let tempImg = document.createElement('img');
+                tempImg.src = recipes[i].strMealThumb;
+                //tempImg.classList.add('');
+                let tempName = document.createElement('h1');
+                tempName.textContent = recipes[i].strMeal;
+                //tempName.classList.add('');
+                tempDiv.appendChild(tempImg);
+                tempDiv.appendChild(tempName);
+            }
+        })
+        .catch( (err) => {
+            console.log(err);
+        }) --}}
+</script>

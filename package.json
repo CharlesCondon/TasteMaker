@@ -1,0 +1,42 @@
+{
+  "name": "charlescondon-final-project",
+  "version": "1.0.0",
+  "description": "## Overview discription of what the app is",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "postcss src/public/tailwind.css -o src/public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-034-spring-2021/CharlesCondon-final-project.git"
+  },
+  "author": "Charles Condon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-034-spring-2021/CharlesCondon-final-project/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-034-spring-2021/CharlesCondon-final-project#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-session": "^1.15.6",
+    "hbs": "^4.0.1",
+    "mongoose": "^5.0.11",
+    "mongoose-type-email": "^1.0.5",
+    "mongoose-url-slugs": "^1.0.2",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "nodemon": "^2.0.7",
+    "postcss": "^8.2.9",
+    "tailwindcss": "^2.0.4"
+  }
+}

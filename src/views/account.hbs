@@ -1,0 +1,19 @@
+<div class='absolute top-12 lg:top-4 lg:left-40 flex flex-row text-white lg:text-3xl underline'>
+    <a href='/home' class='m-4'>Home</a>
+    <a href='/search' class='m-4'>Search</a>
+</div>  
+<div class='absolute top-12 lg:top-4 right-0 lg:right-40 flex flex-row text-white lg:text-3xl underline'>
+    <a href='/account' class='m-4'>Account</a>
+    <a href='/contact' class='m-4'>Contact</a>
+</div>  
+
+<h1 class='text-white text-4xl lg:text-6xl text-center pt-4 pb-4 mb-10 lg:mb-20'>Taste Maker</h1>
+
+<div class='bg-white w-2/3 lg:w-2/3 rounded-xl m-auto h-96 shadow-lg'>
+    <h1 class='text-indigo-300 text-4xl lg:text-6xl text-center py-4'>{{user.name}}</h1>
+    <hr>
+    {{#if search}}
+        <h1 class='text-center text-3xl m-10'>Most Recent Search:</h1>
+        <h1 class='text-center text-2xl'>{{search}}</h1>
+    {{/if}}
+</div>
